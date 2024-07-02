@@ -1,5 +1,6 @@
-*/build
+build/
 /.vscode
 /.devcontainer
-test/sdkconfig
+sdkconfig.old
+sdkconfig
 test/dependencies.lock
