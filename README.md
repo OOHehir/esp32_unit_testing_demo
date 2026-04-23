@@ -1,27 +1,21 @@
-# Demo of unit testing with IDF
+# esp32_unit_testing_demo
 
-To run from VSC with ESP-IDF extension, open the project folder open up ESP-IDF terminal and run the following commands:
+Demonstrates structured unit testing on ESP32 using the ESP-IDF testing framework — tag-based test filtering, interactive test menu, and CI-compatible output.
 
-```
-cd test
+## Key Technologies
+
+- **MCU:** ESP32
+- **Framework:** ESP-IDF unit testing
+- **Build:** CMake + idf.py
+
+## Getting Started
+
+```bash
 idf.py build flash monitor
 ```
 
-## Troubleshooting
-If the test field is empty (see below), from the bottom icon bar, click on 'ESP-IDF: Select Port to Use' & select appropriate port. Re-run the above commands.
+Tests can be filtered by tag (e.g. `[mean]`, `[fails]`) from the interactive menu on the serial console.
 
-```
-#### Executing one test by its name #####
+---
 
-
-#### Running tests with [mean] tag #####
-
-
-#### Running tests without [fails] tag #####
-
-
-#### Running all the registered tests #####
-
-
-#### Starting interactive test menu #####
-```
+Built by Owen O'Hehir — embedded Linux, IoT, Matter & Rust consulting at [electronicsconsult.com](https://electronicsconsult.com). Available for contract and consulting work.
